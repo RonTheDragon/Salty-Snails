@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2547526180223345780}
   - component: {fileID: 1510247411983281105}
   - component: {fileID: 3679877731990347547}
+  - component: {fileID: -7996238886599578262}
   m_Layer: 0
   m_Name: EA_Swamp_BrokenTree_02a_PRE
   m_TagString: Untagged
@@ -55,6 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,3 +81,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-7996238886599578262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2887213342366645966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6758357, y: 7.8418527, z: 2.595133}
+  m_Center: {x: -0.07807356, y: 3.67753, z: -0.3569918}
