@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1026751887376989764}
   - component: {fileID: 4147844890096447969}
   - component: {fileID: 2194640303226275115}
-  - component: {fileID: 739166504152640985}
+  - component: {fileID: -4498566795664538949}
   m_Layer: 0
   m_Name: EA_Swamp_tree10_Moss_01a_PRE
   m_TagString: Untagged
@@ -56,6 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -80,8 +81,9 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &739166504152640985
-MeshCollider:
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-4498566795664538949
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90,7 +92,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5756849368633613811, guid: b71fe50e26d78354f92993a9996af021, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 4.8833804, y: 3.8556666, z: 9.870162}
+  m_Center: {x: -0.34183145, y: 1.7692521, z: 0.10148239}
