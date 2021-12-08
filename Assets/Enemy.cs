@@ -16,8 +16,7 @@ public class Enemy : MonoBehaviour
     public float ScanCooldown = 2;
     float scanCooldown;
     public float RoamRadius = 10;
-    public float RoamCooldownMax = 5;
-    public float RoamCooldownMin = 2;
+    public float RoamCooldown = 5;
     float roamCooldown;
     Vector3 LocationLastFrame;
 
@@ -83,7 +82,7 @@ public class Enemy : MonoBehaviour
         if (roamCooldown > 0) { roamCooldown -= Time.deltaTime; }
         else
         {
-            roamCooldown = Random.Range(RoamCooldownMin, RoamCooldownMax);
+            roamCooldown = Random.Range(0,RoamCooldown);
             float x = Random.Range(-RoamRadius, RoamRadius);
             float z = Random.Range(-RoamRadius + 0.1f, RoamRadius);
             Vector3 MoveTo = new Vector3(TheEnemy.transform.position.x + x, TheEnemy.transform.position.y, TheEnemy.transform.position.z + z);
@@ -95,7 +94,6 @@ public class Enemy : MonoBehaviour
         Vector3 targetlocation = new Vector3(target.transform.position.x, TheEnemy.transform.position.y, target.transform.position.z);
         Vector3 direction = (targetlocation - TheEnemy.transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(direction);
-        TheEnemy.transform.rotation = Quaternion.Slerp(TheEnemy.transform.rotation, lookRotation, Time.deltaTime * nav.angularSpeed);
-        
+        TheEnemy.transform.rotation = Quaternion.Slerp(TheEnemy.transform.rotation, lookRotation, Time.deltaTime * nav.angularSpeed);       
     }
 }
