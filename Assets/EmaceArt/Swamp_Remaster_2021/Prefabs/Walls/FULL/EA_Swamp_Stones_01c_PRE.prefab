@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6019292394707661934}
   - component: {fileID: 7216746960387947467}
   - component: {fileID: 4883026067224088321}
+  - component: {fileID: 6504442060121913524}
   m_Layer: 0
   m_Name: EA_Swamp_Stones_01c_PRE
   m_TagString: Untagged
@@ -55,6 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,3 +81,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6504442060121913524
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6395958258086112980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.437149, y: 13.251777, z: 18.214275}
+  m_Center: {x: 0, y: 6.6258883, z: 0.00000047683716}
