@@ -69,8 +69,8 @@ public class PlayerController : MonoBehaviour
         }
         if (InShell)
         {
-            if (joystick.Vertical != 0) { CameraHolder.transform.rotation *= Quaternion.Euler(joystick.Vertical * RotateSpeed * Time.deltaTime,0, 0); }
-            if (joystick.Horizontal != 0) { CameraHolder.transform.rotation *= Quaternion.Euler(0, joystick.Horizontal * -RotateSpeed * Time.deltaTime, 0); }
+            if (joystick.Vertical != 0) { CameraHolder.transform.rotation *= Quaternion.Euler(joystick.Vertical * -RotateSpeed * Time.deltaTime,0, 0); }
+            if (joystick.Horizontal != 0) { CameraHolder.transform.rotation *= Quaternion.Euler(0, joystick.Horizontal * RotateSpeed * Time.deltaTime, 0); }
             Vector3 eulerRotation = CameraHolder.transform.rotation.eulerAngles;
             float ry = eulerRotation.x;
             if (ry >= 180) ry -= 360;
