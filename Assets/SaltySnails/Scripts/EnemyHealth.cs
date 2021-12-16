@@ -6,6 +6,7 @@ public class EnemyHealth : Health
 {
     float TheKnockback;
     Vector3 TheImpactLocation;
+    public GameObject SpawnOnDeath;
 
     // Start is called before the first frame update
     new void Start()
@@ -25,10 +26,15 @@ public class EnemyHealth : Health
         base.TakeDamage(damage,knockback, ImpactLocation);
         TheKnockback = knockback;
         TheImpactLocation = ImpactLocation;
+        if (anim != null)
+        {
+            anim.SetTrigger("Hurt");
+        }
     }
 
     protected override void Death()
     {
+        Instantiate(SpawnOnDeath, transform.position, transform.rotation);
         Destroy(transform.parent.gameObject);
     }
 

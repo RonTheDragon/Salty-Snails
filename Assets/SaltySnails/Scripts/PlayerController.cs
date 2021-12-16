@@ -28,14 +28,15 @@ public class PlayerController : MonoBehaviour
     public float RainDamageMultiplayer = 2;
     public TextMeshProUGUI ShellButtonTxt;
 
-    public float ComboResetTimer = 3;
+    float ComboResetTimer = 3;
     float ComboResetTime;
     float AttackCooldown;
     Vector3 ForceTowards;
-    float ForceTime;
-    int ComboCount;
+    float ForceTime;  
+    public int ComboCount;
 
-    bool InShell = false;
+    [HideInInspector]
+    public bool InShell = false;
     
     // Start is called before the first frame update
     void Start()
@@ -172,14 +173,14 @@ public class PlayerController : MonoBehaviour
                 ForceTime = 1;
                 ForceTowards = Snail.transform.forward;
                 anim.SetTrigger("Attack1");
-                AttackCooldown = 1;
+                AttackCooldown = 0.8f;
             }
             if (ComboCount == 1)
             {
                 ForceTime = 0.5f;
                 ForceTowards = Snail.transform.forward*2;
                 anim.SetTrigger("Attack2");
-                AttackCooldown = 1;
+                AttackCooldown = 0.6f;
             }
             if (ComboCount == 2)
             {
@@ -199,5 +200,10 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.7f);
         SnailBlast.Emit(100);
+    }
+
+    public bool IsDoingSpecialAttack()
+    {
+        return AttackCooldown > 0 && ComboCount == 0;
     }
 }

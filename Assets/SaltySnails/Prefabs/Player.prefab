@@ -13791,7 +13791,7 @@ ParticleSystem:
     radiusScale: 0.01
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 55
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -20021,7 +20021,8 @@ MonoBehaviour:
   Gravity: 10
   RainDamageMultiplayer: 5
   ShellButtonTxt: {fileID: 44680810}
-  ComboResetTimer: 3
+  ComboCount: 0
+  InShell: 0
 --- !u!1 &1894984349888643495
 GameObject:
   m_ObjectHideFlags: 0
@@ -20778,7 +20779,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 2, z: 0}
+  m_Center: {x: 0, y: 3, z: 0}
 --- !u!95 &1894984349181343077
 Animator:
   serializedVersion: 3

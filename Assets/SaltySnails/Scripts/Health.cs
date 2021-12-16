@@ -10,7 +10,7 @@ public abstract class Health : MonoBehaviour
     public float Hp;
     Vector3 startingPoint;
     Quaternion startingRotation; 
-    Animator anim;
+    protected Animator anim;
 
     // Start is called before the first frame update
     protected void Start()
@@ -41,10 +41,7 @@ public abstract class Health : MonoBehaviour
     public virtual void TakeDamage(float damage, float knockback,Vector3 ImpactLocation)
     {
         Hp -= damage;
-        if (anim != null)
-        {
-            anim.SetTrigger("Hurt");
-        }
+        
     }
 
     protected abstract void Death(); 
