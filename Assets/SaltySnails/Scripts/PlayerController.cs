@@ -198,7 +198,7 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator TriggerSnailBlast()
     {
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.8f);
         SnailBlast.Emit(100);
     }
 
