@@ -116,7 +116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837706033495252390}
   m_LocalRotation: {x: -0.6714899, y: -0, z: -0, w: 0.7410138}
-  m_LocalPosition: {x: -0.035573885, y: 0.87951636, z: -1.0298802}
+  m_LocalPosition: {x: -0.03557388, y: 0.87951636, z: -1.02988}
   m_LocalScale: {x: 293.18066, y: 293.1806, z: 293.1806}
   m_Children:
   - {fileID: 3408685042778950838}
@@ -569,6 +569,7 @@ GameObject:
   - component: {fileID: 7894597059350824818}
   - component: {fileID: 7405306050443959766}
   - component: {fileID: 7405306050443959767}
+  - component: {fileID: 3418181871075457721}
   m_Layer: 3
   m_Name: Worm
   m_TagString: Player
@@ -584,7 +585,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7405306050443959752}
   m_LocalRotation: {x: -0, y: -0.8316086, z: -0, w: 0.5553623}
-  m_LocalPosition: {x: 0.46700287, y: -0.66347134, z: -0.9593353}
+  m_LocalPosition: {x: 0.4670029, y: -2.25, z: -0.9593353}
   m_LocalScale: {x: 0.23563002, y: 0.23563002, z: 0.23563002}
   m_Children:
   - {fileID: 7373869698424366712}
@@ -629,6 +630,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3418181871075457721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405306050443959752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00cddf34dac5a541a169ac343504b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7925450155703770533
 GameObject:
   m_ObjectHideFlags: 0
