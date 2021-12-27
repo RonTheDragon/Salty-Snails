@@ -6,7 +6,9 @@ public class SaltRain : MonoBehaviour
 {
     ParticleSystem[] Rain = new ParticleSystem[2];
     public float RainMinCooldown  = 10;
-    public float RainMaxCooldown  = 30;
+    public float RainMaxCooldown  = 20;
+    public float noRainMinCooldown = 20;
+    public float noRainMaxCooldown = 30;
     public int MaxSalt  = 10;
     public float Strengthening  = 2;
     public float Weakening  = 3;
@@ -40,7 +42,14 @@ public class SaltRain : MonoBehaviour
         }
         else
         {
-            RainCooldown = Random.Range(RainMinCooldown, RainMaxCooldown);
+            if(IsRaining)
+            {
+                RainCooldown = Random.Range(noRainMinCooldown, noRainMaxCooldown);
+            }
+            else
+            {
+                RainCooldown = Random.Range(RainMinCooldown, RainMaxCooldown);              
+            }
             IsRaining = !IsRaining;
         }
     }
