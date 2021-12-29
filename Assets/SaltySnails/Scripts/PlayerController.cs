@@ -140,6 +140,9 @@ public class PlayerController : MonoBehaviour
         Color c = SMR.materials[1].color;
         c.r = 1-health.Hp/health.MaxHp;
         SMR.materials[1].color = c ;
+        c = SMR.materials[0].color;
+        c.g = 1 - health.Hp / health.MaxHp;
+        SMR.materials[0].color = c;
     }
 
     void Combat()
