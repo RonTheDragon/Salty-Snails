@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     GameObject Tripod;
     GameObject CameraHolder;
     public float CameraDist;
+    [Range(0,1)]
+    public float CameraUp;
     public LayerMask CLM;
 
     public float Speed = 10;
@@ -50,6 +52,7 @@ public class PlayerController : MonoBehaviour
         Tripod = cam.transform.parent.gameObject;
         CameraHolder = Tripod.transform.parent.gameObject;
         ShellButtonTxt.text = "Enter Shell";
+        CameraHolder.transform.rotation = Quaternion.LookRotation(Snail.transform.forward - (Snail.transform.up * CameraUp));
     }
 
     // Update is called once per frame
@@ -101,7 +104,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            CameraHolder.transform.rotation = Quaternion.Slerp(CameraHolder.transform.rotation, Quaternion.LookRotation(Snail.transform.forward), Time.deltaTime * 10);
+            CameraHolder.transform.rotation = Quaternion.Slerp(CameraHolder.transform.rotation, Quaternion.LookRotation(Snail.transform.forward-(Snail.transform.up* CameraUp)), Time.deltaTime * 10);
         }
     }
     public void ShellToggle()
