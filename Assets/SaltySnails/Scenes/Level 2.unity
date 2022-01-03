@@ -3486,8 +3486,8 @@ GameObject:
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1532538339
 MeshCollider:
@@ -4450,6 +4450,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2362711270094707835, guid: e752c81ddddb7094d8f8841be1509662, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2362711270094707836, guid: e752c81ddddb7094d8f8841be1509662, type: 3}
       propertyPath: m_Name
       value: Goal

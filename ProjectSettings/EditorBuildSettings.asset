@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/SaltySnails/Scenes/Level 2.unity
     guid: fcacbda600ba88f4ca37aa113792aea2
   - enabled: 1
-    path: Assets/SaltySnails/Scenes/Boss.unity
-    guid: 99ee35a6f6a4ee542b75afe2b88c90c2
+    path: Assets/SaltySnails/Scenes/Swamp_MainScene.unity
+    guid: 512b5a2095c480148ba2f106560e8ca1
   m_configObjects: {}
