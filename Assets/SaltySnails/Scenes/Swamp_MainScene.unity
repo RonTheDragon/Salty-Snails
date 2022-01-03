@@ -430,6 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BlockEntry: {fileID: 1939947660}
+  BeforeWar: {fileID: 2010880689}
   Boss: {fileID: 3573278947164291062}
   Goal: {fileID: 1681350599}
 --- !u!65 &48649055
@@ -7798,6 +7799,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daaebcacb4503bf4f813d58941846b0c, type: 3}
+--- !u!1 &2010880689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2010880691}
+  - component: {fileID: 2010880690}
+  m_Layer: 0
+  m_Name: BeforeWarArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2010880690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010880689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb37c95d010a6a4682ee6c0bc50c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - Name: 
+    activation: 3
+    Clip: {fileID: 8300000, guid: 628ef545755ffce4d86aff2431bd241e, type: 3}
+    Loop: 1
+    HearEveryWhere: 1
+    MinRange: 0
+    MaxRange: 0
+    Volume: 0.3
+    Pitch: 0.5
+    RandomizedPitch: 0
+    source: {fileID: 0}
+  - Name: 
+    activation: 3
+    Clip: {fileID: 8300000, guid: 628ef545755ffce4d86aff2431bd241e, type: 3}
+    Loop: 1
+    HearEveryWhere: 1
+    MinRange: 0
+    MaxRange: 0
+    Volume: 0.07
+    Pitch: 1.5
+    RandomizedPitch: 0
+    source: {fileID: 0}
+--- !u!4 &2010880691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010880689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -83.26245, y: -47.16037, z: -105.047745}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2016005030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8555,7 +8622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 871315730998151391, guid: fb3f589dc1f8c0e47a7941ae1cdf0524, type: 3}
       propertyPath: ScanRadius
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3239220866684931337, guid: fb3f589dc1f8c0e47a7941ae1cdf0524, type: 3}
       propertyPath: AttackDamage
@@ -8643,7 +8710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6970562944029980231, guid: fb3f589dc1f8c0e47a7941ae1cdf0524, type: 3}
       propertyPath: m_StoppingDistance
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb3f589dc1f8c0e47a7941ae1cdf0524, type: 3}
@@ -8652,3 +8719,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3958888894095230184, guid: fb3f589dc1f8c0e47a7941ae1cdf0524, type: 3}
   m_PrefabInstance: {fileID: 533142452581890846}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3573278947164291063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3573278947164291062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb37c95d010a6a4682ee6c0bc50c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - Name: 
+    activation: 3
+    Clip: {fileID: 8300000, guid: a9741b5e50f2d92409f82e2bb4dcd001, type: 3}
+    Loop: 1
+    HearEveryWhere: 1
+    MinRange: 0
+    MaxRange: 0
+    Volume: 0.2
+    Pitch: 0.8
+    RandomizedPitch: 0
+    source: {fileID: 0}

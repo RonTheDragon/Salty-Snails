@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossBattleManager : MonoBehaviour
 {
     public GameObject BlockEntry;
+    public GameObject BeforeWar;
     public GameObject Boss;
     public GameObject Goal;
     bool AlreadyTriggered;
@@ -37,6 +38,7 @@ public class BossBattleManager : MonoBehaviour
             {
                 BlockEntry.SetActive(true);
                 Boss.SetActive(true);
+                BeforeWar.SetActive(false);
                 CheckIfBossAlive = true;
                 AlreadyTriggered = true;
             }
