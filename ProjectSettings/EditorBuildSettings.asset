@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SaltySnails/Scenes/Swamp_MainScene.unity
     guid: 512b5a2095c480148ba2f106560e8ca1
+  - enabled: 1
+    path: Assets/SaltySnails/Scenes/You Won!.unity
+    guid: e6d10d595e2e14643af523fb2d5e9970
   m_configObjects: {}
